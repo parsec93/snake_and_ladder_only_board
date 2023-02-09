@@ -1,0 +1,67 @@
+<!DOCTYPE html">
+<html>
+	<head>
+		<title>Snakes and Ladders</title>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=-utf-8"/>
+		<style>
+			#wrapper {
+			   margin: 0px auto;
+			   padding: 0;
+			   border: 2px solid black;
+			   width: 80%;
+			   height: auto;
+			   display:block;
+			   float:left
+			}
+			#players{
+				display:block;
+				width:19%;
+				height:95%;
+				float:left;
+				font-size:1.5em;
+			}
+			#players > div {
+				width:auto;
+				padding-left:5px;
+				margin-bottom:5px;
+			}
+			#players > div > img{
+				width:30%;
+				height:auto;
+				margin-bottom:-15%;
+			}
+			input {
+				font-size:0.9em;
+				width:100%;
+				overflow:visible;
+				word-break:normal
+			}
+		</style>
+	</head>
+	<body>
+		
+	<div id="wrapper" >
+		<img id="board" src="Game-Board-Snakes-and-Ladders-Full_no_boarder.gif" width="100%" height="95%"/>
+	</div>
+
+	<div id="players">
+		<div id="player1"><img src="fox.png" width="150px" height="150px" id="draggable" class="draggable"><img src="fox.png" width="150px" height="150px" id="draggable" class="draggable"><br/>1조<input type="text"/><br/></div>
+		<div id="player2"><img src="bee.png" width="150px" height="150px" class="draggable"><img src="bee.png" width="150px" height="150px" id="draggable" class="draggable"><br/>2조<input type="text"/><br/></div>
+		<div id="player3"><img src="ducky.png" width="150px" height="150px" class="draggable"><img src="ducky.png" width="150px" height="150px" id="draggable" class="draggable"><br/>3조<input type="text"/><br/></div>
+		<div id="player4"><img src="koala.png" width="150px" height="150px" class="draggable"><img src="koala.png" width="150px" height="150px" id="draggable" class="draggable"><br/>4조<input type="text"/><br/></div>
+		<div id="player5"><img src="octopus.png" width="150px" height="150px" class="draggable"><img src="octopus.png" width="150px" height="150px" id="draggable" class="draggable"><br/>5조<input type="text"/><br/></div>
+		<div id="player6"><img src="whale.png" width="150px" height="150px" class="draggable"><img src="whale.png" width="150px" height="150px" id="draggable" class="draggable"><br/>6조<input type="text"/><br/></div>
+	</div>
+
+	</body>
+	
+	<script src="jquery-3.6.3.min.js"></script>
+ 	<script src="jquery-ui.js"></script>
+	<script>
+	$( function() {
+		$( "#draggable" ).draggable();
+		$(".draggable").draggable();
+	} );
+	</script>
+</html>
